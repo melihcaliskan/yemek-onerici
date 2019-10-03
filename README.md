@@ -16,3 +16,4 @@
  3. Kullanıcıya yemek ekleme olanağı sağlama.
  4. Kullanıcının daha önceden oluşturduğu yemekleri listeleme.
  5. Kullanıcı giriş yaptığında veritabanına oturum bilgisini kaydetme.
+ 6. Günün yemeğinde combobox değeri değiştiğinde tekrar sorgu yapılıp veriler yenilenecek.
