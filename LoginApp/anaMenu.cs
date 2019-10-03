@@ -8,6 +8,8 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using YemekOnerici;
+using System.Windows.Controls;
+using System.Windows.Documents;
 
 namespace LoginApp
 {
@@ -34,7 +36,9 @@ namespace LoginApp
             DataTable malzemeler = malzemeleriCek(id);
             foreach (DataRow malzeme in malzemeler.Rows)
             {
-                listBoxAdi.Items.Add(malzeme["isim"]);
+                listBoxAdi.DisplayMember = "Text";
+                listBoxAdi.ValueMember = "Value";
+                listBoxAdi.Items.Insert(0, new { Value = malzeme["id"], Text = malzeme["isim"] });
             }
         }
         private DataTable malzemeleriCek(int id)
@@ -59,9 +63,13 @@ namespace LoginApp
             label1.Text = "Hoşgeldin " + Char.ToUpper(kullaniciadi[0]) + kullaniciadi.Remove(0, 1) + ", ";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void bul_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Yapım aşamasında");
+            List<int> secilenIDler = new List<int>();
+            foreach (var value in checkedListBox1.CheckedItems)
+            {
+                //Console.WriteLine((value as ListItem).Value);
+            }
         }
 
         private void sonYemeklerimButonu(object sender, EventArgs e)

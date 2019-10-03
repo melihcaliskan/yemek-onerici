@@ -22,3 +22,15 @@
 \\mac\Home\Downloads\Login-Form-in-Csharp-master\YemekOnerici\obj\x86\Debug\YemekOnerici.csproj.GenerateResource.cache
 \\mac\Home\Downloads\Login-Form-in-Csharp-master\YemekOnerici\obj\x86\Debug\YemekOnerici.exe
 \\mac\Home\Downloads\Login-Form-in-Csharp-master\YemekOnerici\obj\x86\Debug\YemekOnerici.pdb
+\\Mac\Home\Documents\GitHub\yemek-onerici\LoginApp\bin\Debug\YemekOnerici.exe
+\\Mac\Home\Documents\GitHub\yemek-onerici\LoginApp\bin\Debug\YemekOnerici.pdb
+\\Mac\Home\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.csprojAssemblyReference.cache
+\\Mac\Home\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\LoginApp.gununYemegi.resources
+\\Mac\Home\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.malzemeEkle.resources
+\\Mac\Home\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\LoginApp.sonYemekler.resources
+\\Mac\Home\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\LoginApp.girisEkrani.resources
+\\Mac\Home\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\LoginApp.anaMenu.resources
+\\Mac\Home\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.Properties.Resources.resources
+\\Mac\Home\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.csproj.GenerateResource.cache
+\\Mac\Home\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.exe
+\\Mac\Home\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.pdb

@@ -117,10 +117,10 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Son Üyeler";
             // 
-            // frmLogin
+            // girisEkrani
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(466, 433);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
@@ -131,7 +131,7 @@
             this.Controls.Add(this.btnLogin);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.Name = "frmLogin";
+            this.Name = "girisEkrani";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Giriş Yap";

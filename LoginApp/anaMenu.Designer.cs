@@ -77,7 +77,7 @@
             this.bul.TabIndex = 2;
             this.bul.Text = "Yapabileceğim Yemekleri Bul";
             this.bul.UseVisualStyleBackColor = true;
-            this.bul.Click += new System.EventHandler(this.button1_Click);
+            this.bul.Click += new System.EventHandler(this.bul_Click);
             // 
             // label2
             // 
@@ -234,8 +234,8 @@
             // 
             // anaMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(764, 748);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.checkedListBox6);

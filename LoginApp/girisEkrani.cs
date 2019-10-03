@@ -39,12 +39,18 @@ namespace LoginApp
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
+            /*
+            
             baglanti.Open();
             da = new SqlDataAdapter("SELECT dbo.kullanici.id, dbo.kullanici.ad FROM dbo.kullanici", baglanti);
             DataTable tablo = new DataTable();
             da.Fill(tablo);
             dataGridView1.DataSource = tablo;
             baglanti.Close();
+            */
+            anaMenu anaMenu = new anaMenu("melih");
+            this.Hide();
+            anaMenu.Show();
         }
     }
 }
