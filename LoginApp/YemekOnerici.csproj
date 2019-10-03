@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ListItem.cs" />
     <Compile Include="malzemeEkle.cs">
       <SubType>Form</SubType>
     </Compile>

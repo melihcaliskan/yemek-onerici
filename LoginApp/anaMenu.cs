@@ -1,16 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using YemekOnerici;
-using System.Windows.Controls;
 using System.Windows.Documents;
-
 namespace LoginApp
 {
     public partial class anaMenu : Form
@@ -19,6 +13,7 @@ namespace LoginApp
         SqlConnection baglanti = new System.Data.SqlClient.SqlConnection("Server = MELIHALIKAN22F1\\SQLEXPRESS; Database = odev; Integrated Security = SSPI");
         SqlCommand komut = new System.Data.SqlClient.SqlCommand();
         SqlDataAdapter da;
+        List<int> secilenIDler = new List<int>();
 
         public anaMenu(String kullaniciadi)
         {
@@ -38,7 +33,7 @@ namespace LoginApp
             {
                 listBoxAdi.DisplayMember = "Text";
                 listBoxAdi.ValueMember = "Value";
-                listBoxAdi.Items.Insert(0, new { Value = malzeme["id"], Text = malzeme["isim"] });
+                listBoxAdi.Items.Insert(0, new ListItem{ Value = malzeme["id"].ToString(), Text = malzeme["isim"].ToString() });
             }
         }
         private DataTable malzemeleriCek(int id)
@@ -65,10 +60,19 @@ namespace LoginApp
 
         private void bul_Click(object sender, EventArgs e)
         {
-            List<int> secilenIDler = new List<int>();
-            foreach (var value in checkedListBox1.CheckedItems)
+            secilenIDler.Clear();
+            secilenleriBul(checkedListBox1);
+            secilenleriBul(checkedListBox2);
+            secilenleriBul(checkedListBox3);
+            secilenleriBul(checkedListBox4);
+            secilenleriBul(checkedListBox5);
+            secilenleriBul(checkedListBox6);
+            Console.WriteLine(secilenIDler[0]);
+        }
+        public void secilenleriBul(CheckedListBox listBoxAdi){
+            foreach (ListItem item in listBoxAdi.SelectedItems)
             {
-                //Console.WriteLine((value as ListItem).Value);
+                secilenIDler.Add(Int32.Parse(item.Value));
             }
         }
 
