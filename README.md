@@ -11,7 +11,7 @@
 
 ### Todo:
 
- 1. Yemekler veritabanına eklenecek & seçilen checkboxlardan verileri alıp ilişkili yemekler bulunacak.
+ 1. Seçilen checkboxlardan verileri alıp ilişkili yemekler bulunacak.
  2. ~~Kullanıcıya malzeme ekleme olanağı sağlama.~~
  3. Kullanıcıya yemek ekleme olanağı sağlama.
  4. Kullanıcının daha önceden oluşturduğu yemekleri listeleme.
