@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YemekOnerici", "LoginApp\YemekOnerici.csproj", "{427281A7-FB04-4A43-8CEB-E38CA9E0AFE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{427281A7-FB04-4A43-8CEB-E38CA9E0AFE5}.Debug|x86.ActiveCfg = Debug|x86
+		{427281A7-FB04-4A43-8CEB-E38CA9E0AFE5}.Debug|x86.Build.0 = Debug|x86
+		{427281A7-FB04-4A43-8CEB-E38CA9E0AFE5}.Release|x86.ActiveCfg = Release|x86
+		{427281A7-FB04-4A43-8CEB-E38CA9E0AFE5}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39235DA5-1012-4092-A87B-D4C1459A584D}
+	EndGlobalSection
+EndGlobal

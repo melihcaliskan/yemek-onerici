@@ -1,0 +1,32 @@
+            string sebzeler = "Biber,Soğan,Nane,Limon,Sarımsak,Patlıcan,Fesleğen,Göbek Marul,Marul,Mor Lahana,Havuç,Maydanoz,Lolorosso,Domates,Turp,Salatalık,Dereotu,Semizotu,Lahana,Yeşil Biber,Kırmızı Biber,Sarı Biber";
+            List<String> sebzeListesi = sebzeler.Split(',').ToList();
+
+            string bakliyatlar = "Mercimek,Pirinç,Kırmızı Mercimek,Bulgur,Soya Sosu,Mısır,İrmik,Makarna";
+            List<String> bakliyatListesi = bakliyatlar.Split(',').ToList();
+
+            string etler = "Uskumru,Tavuk,Kıyma,Kavurma";
+            List<String> etListesi = etler.Split(',').ToList();
+
+            string baharatlar = "Tuz,Karabiber,Kimyon,Pul Biber,Tarçın,Kekik,Sumak";
+            List<String> baharatListesi = baharatlar.Split(',').ToList();
+
+            string yaglar = "Sıvı Yağ,Tereyağı,Zeytinyağı";
+            List<String> yagListesi = yaglar.Split(',').ToList();
+
+            string yanurunler = "Un,Galeta unu,Salça,Yoğurt,Su,Limon Suyu,Süt,Kaşar,Badem,Üzüm,Nar Ekşisi,Siyah Zeytin,Beyaz Peynir,Yumurta,Maya,Toz Şeker,Vanilya,Pirinç unu,Nişasta,Pudra Şekeri,Kakao,Kabartma Tozu,Armut,Bisküvi";
+            List<String> yanUrunListesi = yanurunler.Split(',').ToList();
+
+            System.Data.SqlClient.SqlConnection sqlConnection1 =
+                new System.Data.SqlClient.SqlConnection("Server=MELIHALIKAN22F1\\SQLEXPRESS;Database=odev;Integrated Security=SSPI");
+
+            System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.Connection = sqlConnection1;
+
+            sqlConnection1.Open();
+            foreach (String malzeme in yanUrunListesi){
+                cmd.CommandText = "INSERT INTO dbo.malzeme VALUES('"+malzeme+"', 6)";
+                cmd.ExecuteNonQuery();
+            }
+            MessageBox.Show("Başarılı");
+            sqlConnection1.Close();

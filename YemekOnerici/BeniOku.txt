@@ -1,0 +1,7 @@
+MALZEME_TURLERİ TABLOSUNDAKİ İD'LER VE KARŞILIKLARI:
+1 - Sebzeler
+2 - Bakliyatlar
+3 - Etler
+4 - Baharatlar
+5 - Yağlar
+6 - Yan Ürünler
