@@ -7,6 +7,7 @@
  - 201713171024 - Mert Sefa Yüksel 
  - 201713171034 - Ömer Ateş
  - 201713171036 - Melih Çalışkan
+ - 201713171905 - Emre Göç
 
 ### Todo:
 
