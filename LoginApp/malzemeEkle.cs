@@ -12,7 +12,7 @@ namespace YemekOnerici
 {
     public partial class malzemeEkle : Form
     {
-        SqlConnection baglanti = new System.Data.SqlClient.SqlConnection("Server = MELIHALIKAN22F1\\SQLEXPRESS; Database = odev; Integrated Security = SSPI");
+        SqlConnection baglanti = new System.Data.SqlClient.SqlConnection(baglantiYardimcisi.get());
         SqlCommand komut = new System.Data.SqlClient.SqlCommand();
         public malzemeEkle()
         {

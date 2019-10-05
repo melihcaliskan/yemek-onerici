@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using YemekOnerici;
 
 namespace LoginApp
 {
     public partial class gununYemegi : Form
     {
-        SqlConnection baglanti = new SqlConnection("Server=MELIHALIKAN22F1\\SQLEXPRESS;Database=odev;Integrated Security=SSPI");
+        SqlConnection baglanti = new SqlConnection(baglantiYardimcisi.get());
         SqlCommand komut;
         SqlDataAdapter da;
         public gununYemegi()

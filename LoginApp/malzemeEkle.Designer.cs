@@ -41,7 +41,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(40, 75);
+            this.label1.Location = new System.Drawing.Point(19, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(160, 24);
             this.label1.TabIndex = 0;
@@ -49,7 +49,7 @@
             // 
             // malzemeIsimleri
             // 
-            this.malzemeIsimleri.Location = new System.Drawing.Point(220, 75);
+            this.malzemeIsimleri.Location = new System.Drawing.Point(199, 24);
             this.malzemeIsimleri.Multiline = true;
             this.malzemeIsimleri.Name = "malzemeIsimleri";
             this.malzemeIsimleri.Size = new System.Drawing.Size(464, 114);
@@ -59,7 +59,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(40, 241);
+            this.label2.Location = new System.Drawing.Point(19, 190);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(174, 24);
             this.label2.TabIndex = 2;
@@ -67,7 +67,7 @@
             // 
             // malzemeTuru
             // 
-            this.malzemeTuru.Location = new System.Drawing.Point(220, 243);
+            this.malzemeTuru.Location = new System.Drawing.Point(199, 192);
             this.malzemeTuru.Name = "malzemeTuru";
             this.malzemeTuru.Size = new System.Drawing.Size(122, 22);
             this.malzemeTuru.TabIndex = 3;
@@ -77,7 +77,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(40, 352);
+            this.label3.Location = new System.Drawing.Point(19, 301);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(460, 23);
             this.label3.TabIndex = 4;
@@ -88,7 +88,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(40, 388);
+            this.label4.Location = new System.Drawing.Point(19, 337);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(176, 23);
             this.label4.TabIndex = 5;
@@ -97,7 +97,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(567, 352);
+            this.button1.Location = new System.Drawing.Point(546, 301);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(117, 59);
             this.button1.TabIndex = 6;
@@ -109,7 +109,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(702, 450);
+            this.ClientSize = new System.Drawing.Size(687, 382);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);

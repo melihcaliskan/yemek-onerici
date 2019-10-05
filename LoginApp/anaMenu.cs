@@ -10,7 +10,7 @@ namespace LoginApp
     public partial class anaMenu : Form
     {
         String kullaniciadi;
-        SqlConnection baglanti = new System.Data.SqlClient.SqlConnection("Server = MELIHALIKAN22F1\\SQLEXPRESS; Database = odev; Integrated Security = SSPI");
+        SqlConnection baglanti = new System.Data.SqlClient.SqlConnection(baglantiYardimcisi.get());
         SqlCommand komut = new System.Data.SqlClient.SqlCommand();
         SqlDataAdapter da;
         List<int> secilenIDler = new List<int>();
@@ -67,7 +67,7 @@ namespace LoginApp
             secilenleriBul(checkedListBox4);
             secilenleriBul(checkedListBox5);
             secilenleriBul(checkedListBox6);
-            Console.WriteLine(secilenIDler[0]);
+            //INSERT INTO dbo.yemek VALUES('Test', 'awd')
         }
         public void secilenleriBul(CheckedListBox listBoxAdi){
             foreach (ListItem item in listBoxAdi.SelectedItems)
@@ -91,6 +91,12 @@ namespace LoginApp
         {
             malzemeEkle malzemeEkle = new malzemeEkle();
             malzemeEkle.Show();
+        }
+
+        private void yemekEkle_Click(object sender, MouseEventArgs e)
+        {
+            yemekEkle yemekEkle = new yemekEkle();
+            yemekEkle.Show();
         }
     }
 }

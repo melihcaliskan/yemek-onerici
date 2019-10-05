@@ -193,6 +193,7 @@
             this.yemekEkle.TabIndex = 14;
             this.yemekEkle.Text = "Yemek Ekle";
             this.yemekEkle.UseVisualStyleBackColor = true;
+            this.yemekEkle.MouseClick += new System.Windows.Forms.MouseEventHandler(this.yemekEkle_Click);
             // 
             // label6
             // 
