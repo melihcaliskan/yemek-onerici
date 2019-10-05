@@ -49,3 +49,4 @@ C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici
 C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.csproj.CoreCompileInputs.cache
 C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.exe
 C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.pdb
+\\Mac\Home\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.sonucEkrani.resources

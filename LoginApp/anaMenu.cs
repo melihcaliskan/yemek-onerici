@@ -67,7 +67,10 @@ namespace LoginApp
             secilenleriBul(checkedListBox4);
             secilenleriBul(checkedListBox5);
             secilenleriBul(checkedListBox6);
-            //INSERT INTO dbo.yemek VALUES('Test', 'awd')
+
+            String sorguIDleri = string.Join(",", secilenIDler);
+            sonucEkrani sonucEkrani = new sonucEkrani(sorguIDleri);
+            sonucEkrani.Show();
         }
         public void secilenleriBul(CheckedListBox listBoxAdi){
             foreach (ListItem item in listBoxAdi.CheckedItems)
