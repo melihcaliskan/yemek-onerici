@@ -22,7 +22,6 @@ namespace LoginApp
         }
 
         public void veriCek(int id) {
-
             baglanti.Open();
             da = new SqlDataAdapter(
             @"SELECT
@@ -85,8 +84,8 @@ namespace LoginApp
             for (int i = 0; i < n; i++)
             {
                 labels[i] = new Label();
-                labels[i].Text = malzemeler.Rows[i][10].ToString();
-                labels[i].Location = new Point(385, 180 + 30 * i);
+                labels[i].Text = (i+1) + ". " + malzemeler.Rows[i][10].ToString();
+                labels[i].Location = new Point(285, 170 + 30 * i);
                 this.Controls.Add(labels[i]);
             }
             baglanti.Close();
@@ -97,26 +96,11 @@ namespace LoginApp
             veriCek(1);
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            /*
+            baglanti.Close();
             int index = comboBox1.SelectedIndex;
             veriCek(index+1);
-            */
         }
     }
 }

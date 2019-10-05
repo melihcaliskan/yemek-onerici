@@ -56,7 +56,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // isim_label
             // 
@@ -67,7 +66,6 @@
             this.isim_label.Size = new System.Drawing.Size(66, 29);
             this.isim_label.TabIndex = 3;
             this.isim_label.Text = "İsim:";
-            this.isim_label.Click += new System.EventHandler(this.label2_Click);
             // 
             // malzeme_label
             // 
@@ -78,7 +76,6 @@
             this.malzeme_label.Size = new System.Drawing.Size(130, 26);
             this.malzeme_label.TabIndex = 4;
             this.malzeme_label.Text = "Malzemeler:";
-            this.malzeme_label.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // comboBox1
             // 
