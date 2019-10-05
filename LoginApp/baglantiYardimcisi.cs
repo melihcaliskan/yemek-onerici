@@ -9,7 +9,7 @@ namespace YemekOnerici
     {
         public static string get()
         {
-            return "Server = MELIHALIKAN22F1\\SQLEXPRESS; Database = odev; Integrated Security = SSPI";
+            return "Server = MSI\\SQLEXPRESS; Database = odev; Integrated Security = SSPI";
         }
     }
 }

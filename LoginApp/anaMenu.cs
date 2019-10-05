@@ -70,7 +70,7 @@ namespace LoginApp
             //INSERT INTO dbo.yemek VALUES('Test', 'awd')
         }
         public void secilenleriBul(CheckedListBox listBoxAdi){
-            foreach (ListItem item in listBoxAdi.SelectedItems)
+            foreach (ListItem item in listBoxAdi.CheckedItems)
             {
                 secilenIDler.Add(Int32.Parse(item.Value));
             }

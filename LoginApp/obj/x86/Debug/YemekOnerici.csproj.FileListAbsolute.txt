@@ -35,3 +35,17 @@
 \\Mac\Home\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.exe
 \\Mac\Home\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.pdb
 \\Mac\Home\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.yemekEkle.resources
+C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\bin\Debug\YemekOnerici.exe
+C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\bin\Debug\YemekOnerici.pdb
+C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.csprojAssemblyReference.cache
+C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\LoginApp.gununYemegi.resources
+C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.malzemeEkle.resources
+C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\LoginApp.sonYemekler.resources
+C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\LoginApp.girisEkrani.resources
+C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\LoginApp.anaMenu.resources
+C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.Properties.Resources.resources
+C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.yemekEkle.resources
+C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.csproj.GenerateResource.cache
+C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.exe
+C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.pdb

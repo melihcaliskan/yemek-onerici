@@ -86,7 +86,7 @@ namespace LoginApp
             {
                 labels[i] = new Label();
                 labels[i].Text = malzemeler.Rows[i][10].ToString();
-                labels[i].Location = new Point(285, 150 + 30 * i);
+                labels[i].Location = new Point(385, 180 + 30 * i);
                 this.Controls.Add(labels[i]);
             }
             baglanti.Close();

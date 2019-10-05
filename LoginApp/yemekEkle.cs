@@ -67,7 +67,6 @@ namespace YemekOnerici
                 secilenleriBul(checkedListBox4);
                 secilenleriBul(checkedListBox5);
                 secilenleriBul(checkedListBox6);
-
                 komut.CommandType = System.Data.CommandType.Text;
                 komut.Connection = baglanti;
                 baglanti.Open();
@@ -97,8 +96,9 @@ namespace YemekOnerici
         }
         public void secilenleriBul(CheckedListBox listBoxAdi)
         {
-            foreach (ListItem item in listBoxAdi.SelectedItems)
+            foreach (ListItem item in listBoxAdi.CheckedItems)
             {
+                Console.WriteLine(item.Text);
                 secilenIDler.Add(Int32.Parse(item.Value));
             }
         }
