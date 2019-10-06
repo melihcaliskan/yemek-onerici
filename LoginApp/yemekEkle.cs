@@ -71,7 +71,7 @@ namespace YemekOnerici
                 komut.Connection = baglanti;
                 baglanti.Open();
 
-                komut.CommandText = "INSERT INTO dbo.yemek VALUES('" + yemekIsmi.Text + "', '" + yemekFotografi.Text + "')";
+                komut.CommandText = "INSERT INTO dbo.yemek VALUES('" + yemekIsmi.Text + "', '" + yemekFotografi.Text + "','" + yemekYapilisi.Text + "')";
                 komut.ExecuteNonQuery();
 
                 //MALZEMELERİ YEMEKLE İLİŞKİLENDİREBİLMEK İÇİN VERİTABANINA SON EKLENEN YEMEK ID'SİNİ ÇEKİYORUZ.

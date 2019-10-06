@@ -21,4 +21,4 @@
  5. ~~Kullanıcı giriş yaptığında veritabanına oturum bilgisini kaydetme.~~
  6. Günün yemeğinde combobox değeri değiştiğinde tekrar sorgu yapılıp veriler yenilenecek.
  7. ~~Bağlantı stringi sınıfa atanıp tek bir dosya değiştirilerek kullanılabilecek.~~
- 8. (?) Yemeğin yapılış açıklamaları eklenebilir.
+ 8. Yemeğin yapılış açıklamaları eklenebilir.
