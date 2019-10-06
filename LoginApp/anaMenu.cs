@@ -83,7 +83,7 @@ namespace LoginApp
 
         private void sonYemeklerimButonu(object sender, EventArgs e)
         {
-            sonYemekler sonYemekler = new sonYemekler(1);
+            sonYemekler sonYemekler = new sonYemekler(kullaniciSifre);
             sonYemekler.Show();
         }
         private void gununYemegiButonu(object sender, EventArgs e)

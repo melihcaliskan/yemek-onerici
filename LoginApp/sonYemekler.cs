@@ -35,7 +35,7 @@ namespace LoginApp
             baglanti.Open();
             da = new SqlDataAdapter(
             @"SELECT
-            dbo.kullanici.id,dbo.yemek.id
+            dbo.yemek.id,dbo.kullanici.id
             FROM
             kullanici_yemekleri
             INNER JOIN dbo.yemek ON dbo.yemek.id = dbo.kullanici_yemekleri.yemek_id
