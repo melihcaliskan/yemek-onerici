@@ -18,119 +18,87 @@ namespace LoginApp
         SqlDataAdapter da;
         Label[] labels;
 
-
         public gununYemegi()
         {
-            
             InitializeComponent();
         }
+        public void yemegiCek(int id) {
+            baglantiYardimcisi yardimci = new baglantiYardimcisi();
+            DataTable yemek = yardimci.yemegiCek(id);
 
-        public void veriCek(int id) {
-            baglanti.Open();
-            
-            da = new SqlDataAdapter(
-            @"SELECT
-            dbo.gunun_yemegi.id,
-            dbo.gunun_yemegi.yemek_id,
-            dbo.gunun_yemegi.gun,
-            dbo.yemek.id,
-            dbo.yemek.isim,
-            dbo.yemek.fotograf,
-            dbo.yemek.yapilis
-
-            FROM
-            dbo.gunun_yemegi
-            INNER JOIN dbo.yemek ON dbo.yemek.id = dbo.gunun_yemegi.yemek_id
-            WHERE
-            dbo.gunun_yemegi.gun = "+id, baglanti);
-            DataTable tablo = new DataTable();
-            da.Fill(tablo);
-            label1.Text = tablo.Rows[0][4].ToString();
-            pictureBox1.ImageLocation = tablo.Rows[0][5].ToString();
-            yapilis_text.Text = tablo.Rows[0][6].ToString();
-
-            baglanti.Close();
-
+            label1.Text = yemek.Rows[0][4].ToString();
+            pictureBox1.ImageLocation = yemek.Rows[0][5].ToString();
         }
-        private void malzemeleriDoldur(int ID)
+        private void malzemeleriDoldur(int id)
         {
-            
-            baglanti.Open();
-            da = new SqlDataAdapter(
-            @"SELECT
-            dbo.gunun_yemegi.id,
-            dbo.gunun_yemegi.yemek_id,
-            dbo.gunun_yemegi.gun,
-            dbo.yemek.id,
-            dbo.yemek.isim,
-            dbo.yemek.fotograf,
-            dbo.yemek_malzemeleri.id,
-            dbo.yemek_malzemeleri.yemek_id,
-            dbo.yemek_malzemeleri.malzeme_id,
-            dbo.malzeme.id,
-            dbo.malzeme.isim
+            baglantiYardimcisi yardimci = new baglantiYardimcisi();
+            DataTable malzemeler = yardimci.malzemeleriCek(id);
 
-            FROM
-            dbo.gunun_yemegi
-            INNER JOIN dbo.yemek ON dbo.yemek.id = dbo.gunun_yemegi.yemek_id
-            INNER JOIN dbo.yemek_malzemeleri ON dbo.yemek_malzemeleri.yemek_id = dbo.yemek.id
-            INNER JOIN dbo.malzeme ON dbo.malzeme.id = dbo.yemek_malzemeleri.malzeme_id
-            WHERE
-            dbo.gunun_yemegi.gun = " + ID, baglanti);
-
-            DataTable malzemeler = new DataTable();
-            da.Fill(malzemeler);
             int n = malzemeler.Rows.Count;
-           
             labels = new Label[n];
 
-        
             for (int i = 0; i < n; i++)
             {
-
                 labels[i] = new Label();
+                labels[i].Name = "malzeme";
 
                 labels[i].Text = (i + 1) + ". " + malzemeler.Rows[i][10].ToString();
                 labels[i].Location = new Point(285, 170 + 30 * i);
                 this.Controls.Add(labels[i]);
             }
-
-            baglanti.Close();
         }
 
-        
+        private void yapilisiDoldur(int id)
+        {
+            baglantiYardimcisi yardimci = new baglantiYardimcisi();
+            DataTable yapilis = yardimci.yapilisiCek(id);
+
+            int n = yapilis.Rows.Count;
+            labels = new Label[n];
+
+
+            for (int i = 0; i < n; i++)
+            {
+                Console.WriteLine(yapilis.Rows[i][1].ToString());
+                labels[i] = new Label();
+                labels[i].Name = "yapilis";
+                labels[i].AutoSize = true;
+
+                labels[i].Text = (i + 1) + ". " + yapilis.Rows[i][1].ToString();
+                labels[i].Location = new Point(445, 170 + 30 * i);
+                this.Controls.Add(labels[i]);
+            }
+        }
+
+
         private void gunleriDoldur()
         {
-            baglanti.Open();
-            da = new SqlDataAdapter(
-            @"SELECT
-            dbo.gunun_yemegi.gun
-            FROM
-            dbo.gunun_yemegi
-            ", baglanti);
+            baglantiYardimcisi yardimci = new baglantiYardimcisi();
+            DataTable gunSayisi = yardimci.gunleriDoldur();
 
-
-            DataTable gunSayisi = new DataTable();
-            da.Fill(gunSayisi);
             selectDayComboBox.DataSource = gunSayisi;
             selectDayComboBox.DisplayMember = "gun";
-            baglanti.Close();
+            selectDayComboBox.ValueMember = "yemek_id";
         }
-
-       
 
         private void selectDayComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int index = int.Parse(selectDayComboBox.Text);
-            malzemeleriDoldur(index);
-            veriCek(index);
+            if(selectDayComboBox.SelectedValue.ToString() != "System.Data.DataRowView")
+            {
+                int id = int.Parse(selectDayComboBox.SelectedValue.ToString());
+                //this.Controls.Remove("malzeme");
+                yemegiCek(id);
+                malzemeleriDoldur(id);
+                yapilisiDoldur(id);
+            }
         }
 
         private void gununYemegi_Load(object sender, EventArgs e)
         {
-            malzemeleriDoldur(1);
             gunleriDoldur();
-            veriCek(1);
+            yemegiCek(12);
+            malzemeleriDoldur(12);
+            yapilisiDoldur(12);
         }
     }
 }

@@ -81,7 +81,8 @@ namespace LoginApp
 
         private void sonYemeklerimButonu(object sender, EventArgs e)
         {
-            sonYemekler sonYemekler = new sonYemekler();
+            //TODO: ID alınacak.
+            sonYemekler sonYemekler = new sonYemekler(1);
             sonYemekler.Show();
         }
         private void gununYemegiButonu(object sender, EventArgs e)

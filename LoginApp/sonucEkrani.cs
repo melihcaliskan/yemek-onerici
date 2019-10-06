@@ -16,6 +16,7 @@ namespace YemekOnerici
         SqlCommand komut = new System.Data.SqlClient.SqlCommand();
         SqlDataAdapter da;
         String sorguIDleri;
+        Label[] labels;
         public sonucEkrani(String sorguIDleri)
         {
             InitializeComponent();
@@ -24,35 +25,18 @@ namespace YemekOnerici
 
         private void sonucEkrani_Load(object sender, EventArgs e)
         {
-            baglanti.Open();
-            da = new SqlDataAdapter(@"
-            SELECT
-	            yemek.id,
-	            yemek.isim,
-	            yemek.fotograf 
-            FROM
-	            dbo.yemek AS yemek
-	            INNER JOIN (
-	            SELECT
-		            malzeme_id,
-		            yemek_id 
-	            FROM
-		            dbo.yemek_malzemeleri AS istenilenler 
-	            WHERE
-		            malzeme_id IN ( "+sorguIDleri+ @" ) 
-		            AND NOT EXISTS ( SELECT * FROM dbo.yemek_malzemeleri AS istenmeyenler WHERE istenmeyenler.yemek_id = istenilenler.yemek_id AND istenmeyenler.malzeme_id NOT IN ( " + sorguIDleri + @" )  ) 
-	            ) AS malzemeler ON malzemeler.yemek_id = yemek.id 
-            GROUP BY
-	            yemek.id,
-	            yemek.isim,
-	            yemek.fotograf
-            ", baglanti);
-            DataTable tablo = new DataTable();
-            da.Fill(tablo);
-            if (tablo.Rows.Count > 0)
+            baglantiYardimcisi yardimci = new baglantiYardimcisi();
+            DataTable sonuc = yardimci.secilenlerinSonucu(sorguIDleri);
+            if (sonuc.Rows.Count > 0)
             {
-                PictureBox[] pics = new PictureBox[50];
-                sonuc.Text = tablo.Rows.Count + " sonuç bulundu.";
+                int id = int.Parse(sonuc.Rows[0][0].ToString());
+                sayi.Text = sonuc.Rows.Count + " sonuç bulundu.";
+                isim.Text = sonuc.Rows[0][1].ToString();
+                pictureBox1.ImageLocation = sonuc.Rows[0][2].ToString();
+                malzemeleriDoldur(id);
+                yapilisiDoldur(id);
+                /*
+                BİRDEN ÇOK YEMEK İÇİN BU KISIM ÇALIŞACAK.
                 foreach (DataRow yemek in tablo.Rows)
                 {
                     pics[0] = new PictureBox();
@@ -62,14 +46,54 @@ namespace YemekOnerici
                     pics[0].ImageLocation = yemek["fotograf"].ToString();
                     this.Controls.Add(pics[0]);
                 }
+                */
             }
-            else
-            {
+            else{
                 MessageBox.Show("Kriterlerinize uygun yemek bulunamadı");
                 this.Close();
             }
-                baglanti.Close();
+        }
+        private void malzemeleriDoldur(int id)
+        {
+            baglantiYardimcisi yardimci = new baglantiYardimcisi();
+            DataTable malzemeler = yardimci.malzemeleriCek(id);
 
+            int n = malzemeler.Rows.Count;
+            Console.WriteLine(id + " awdawdaw");
+            labels = new Label[n];
+
+            for (int i = 0; i < n; i++)
+            {
+                Console.WriteLine((i + 1) + ". " + malzemeler.Rows[i][10].ToString());
+                labels[i] = new Label();
+                labels[i].Name = "malzeme";
+
+                labels[i].Text = (i + 1) + ". " + malzemeler.Rows[i][10].ToString();
+                labels[i].Location = new Point(285, 170 + 30 * i);
+                this.Controls.Add(labels[i]);
+            }
+        }
+
+        private void yapilisiDoldur(int id)
+        {
+            baglantiYardimcisi yardimci = new baglantiYardimcisi();
+            DataTable yapilis = yardimci.yapilisiCek(id);
+
+            int n = yapilis.Rows.Count;
+            labels = new Label[n];
+
+
+            for (int i = 0; i < n; i++)
+            {
+                Console.WriteLine(yapilis.Rows[i][1].ToString());
+                labels[i] = new Label();
+                labels[i].Name = "yapilis";
+                labels[i].AutoSize = true;
+
+                labels[i].Text = (i + 1) + ". " + yapilis.Rows[i][1].ToString();
+                labels[i].Location = new Point(445, 170 + 30 * i);
+                this.Controls.Add(labels[i]);
+            }
         }
     }
 }

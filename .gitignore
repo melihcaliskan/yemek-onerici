@@ -1,7 +1,5 @@
 
 .DS_Store
-.DS_Store
-.vs/
-LoginApp/bin/
-LoginApp/obj/
-LoginApp/baglantiYardimcisi.cs
+.vs/*
+LoginApp/bin/*
+LoginApp/obj/*

@@ -47,12 +47,11 @@ namespace LoginApp
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-            baglanti.Open();
-            da = new SqlDataAdapter("SELECT dbo.kullanici.id, dbo.kullanici.ad FROM dbo.kullanici", baglanti);
-            DataTable tablo = new DataTable();
-            da.Fill(tablo);
-            dataGridView1.DataSource = tablo;
-            baglanti.Close();
+            baglantiYardimcisi yardimci = new baglantiYardimcisi();
+            DataTable uyeler = yardimci.uyeleriCek();
+
+            dataGridView1.RowHeadersVisible = false;
+            dataGridView1.DataSource = uyeler;
         }
     }
 }
