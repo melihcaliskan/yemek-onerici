@@ -25,27 +25,43 @@ namespace YemekOnerici
         private void sonucEkrani_Load(object sender, EventArgs e)
         {
             baglanti.Open();
-            /*
-            SqlCommand command = new SqlCommand("SELECT yemek.id, yemek.isim, yemek.fotograf FROM dbo.yemek AS yemek INNER JOIN( SELECT malzeme_id, yemek_id FROM dbo.yemek_malzemeleri AS istenilenler WHERE malzeme_id IN ( @sorguIDleri ) AND NOT EXISTS ( SELECT * FROM dbo.yemek_malzemeleri AS istenmeyenler WHERE istenmeyenler.yemek_id = istenilenler.yemek_id AND istenmeyenler.malzeme_id NOT IN ( @sorguIDleri ) ) ) AS malzemeler ON malzemeler.yemek_id = yemek.id GROUP BY yemek.id, yemek.isim, yemek.fotograf", baglanti);
-            command.Parameters.AddWithValue("@sorguIDleri", sorguIDleri);
-            using (SqlDataReader reader = command.ExecuteReader())
-            {
-                if (reader.Read())
-                {
-                    Console.WriteLine(reader["id"]+" "+reader["isim"]);
-                } else
-                {
-                    MessageBox.Show("Kriterlerinize uygun yemek bulunamadı");
-                    this.Close();
-                }
-            }
-            */
-            da = new SqlDataAdapter("SELECT yemek.id, yemek.isim, yemek.fotograf FROM dbo.yemek AS yemek INNER JOIN( SELECT malzeme_id, yemek_id FROM dbo.yemek_malzemeleri AS istenilenler WHERE malzeme_id IN ("+sorguIDleri+" ) AND NOT EXISTS ( SELECT * FROM dbo.yemek_malzemeleri AS istenmeyenler WHERE istenmeyenler.yemek_id = istenilenler.yemek_id AND istenmeyenler.malzeme_id NOT IN ("+sorguIDleri+" ) ) ) AS malzemeler ON malzemeler.yemek_id = yemek.id GROUP BY yemek.id, yemek.isim, yemek.fotograf", baglanti);
+            da = new SqlDataAdapter(@"
+            SELECT
+	            yemek.id,
+	            yemek.isim,
+	            yemek.fotograf 
+            FROM
+	            dbo.yemek AS yemek
+	            INNER JOIN (
+	            SELECT
+		            malzeme_id,
+		            yemek_id 
+	            FROM
+		            dbo.yemek_malzemeleri AS istenilenler 
+	            WHERE
+		            malzeme_id IN ( "+sorguIDleri+ @" ) 
+		            AND NOT EXISTS ( SELECT * FROM dbo.yemek_malzemeleri AS istenmeyenler WHERE istenmeyenler.yemek_id = istenilenler.yemek_id AND istenmeyenler.malzeme_id NOT IN ( " + sorguIDleri + @" )  ) 
+	            ) AS malzemeler ON malzemeler.yemek_id = yemek.id 
+            GROUP BY
+	            yemek.id,
+	            yemek.isim,
+	            yemek.fotograf
+            ", baglanti);
             DataTable tablo = new DataTable();
             da.Fill(tablo);
             if (tablo.Rows.Count > 0)
             {
-                Console.WriteLine(tablo.Rows[0]["id"].ToString());
+                PictureBox[] pics = new PictureBox[50];
+                sonuc.Text = tablo.Rows.Count + " sonuç bulundu.";
+                foreach (DataRow yemek in tablo.Rows)
+                {
+                    pics[0] = new PictureBox();
+                    pics[0].Location = new Point(20, 70);
+                    pics[0].Name = "pic" + 0;
+                    pics[0].Size = new Size(300, 300);
+                    pics[0].ImageLocation = yemek["fotograf"].ToString();
+                    this.Controls.Add(pics[0]);
+                }
             }
             else
             {
