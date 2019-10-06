@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\DB",
+    "\\LoginApp",
     "\\LoginApp\\obj\\x86",
     "\\LoginApp\\obj\\x86\\Debug"
   ],
+  "SelectedNode": "\\YemekOnerici.sln",
   "PreviewInSolutionExplorer": false
 }
