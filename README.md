@@ -3,6 +3,9 @@
 
 131715123 - Veritabanı Yönetimi Sistemleri dersi için, C# ve MSSQL ile geliştirilen ödev projesi.
 
+![Yemek Önerici](ss.png?raw=true "Title")
+
+
 ### Geliştiriciler:
  - 201713171024 - Mert Sefa Yüksel 
  - 201713171034 - Ömer Ateş
