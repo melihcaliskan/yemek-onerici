@@ -10,16 +10,17 @@ namespace LoginApp
     public partial class anaMenu : Form
     {
         String kullaniciadi;
-        String kullaniciSifre;
+        int kullaniciId;
         SqlConnection baglanti = new System.Data.SqlClient.SqlConnection(baglantiYardimcisi.get());
         SqlCommand komut = new System.Data.SqlClient.SqlCommand();
         SqlDataAdapter da;
         List<int> secilenIDler = new List<int>();
 
-        public anaMenu(String kullaniciadi,int kullainiciSifre)
+        public anaMenu(String kullaniciadi,int kullaniciId)
         {
             this.kullaniciadi = kullaniciadi;
-            this.kullaniciSifre = kullaniciSifre;
+
+            this.kullaniciId = kullaniciId;
             InitializeComponent();
 
             tabloyaEkle(1, checkedListBox1);
@@ -83,7 +84,7 @@ namespace LoginApp
 
         private void sonYemeklerimButonu(object sender, EventArgs e)
         {
-            sonYemekler sonYemekler = new sonYemekler(kullaniciSifre);
+            sonYemekler sonYemekler = new sonYemekler(kullaniciId);
             sonYemekler.Show();
         }
         private void gununYemegiButonu(object sender, EventArgs e)
