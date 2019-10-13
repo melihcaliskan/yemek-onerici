@@ -16,7 +16,7 @@ namespace LoginApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new anaMenu("melih"));
+            Application.Run(new girisEkrani());
         }
     }
 }

@@ -28,7 +28,7 @@ namespace LoginApp
             DataTable tablo = new DataTable();
             da.Fill(tablo);
             if (tablo.Rows.Count == 1){
-                anaMenu anaMenu = new anaMenu(txtUsername.Text.Trim());
+                anaMenu anaMenu = new anaMenu(txtUsername.Text,int.Parse(tablo.Rows[0][0].ToString()));
 
                 komut.CommandType = System.Data.CommandType.Text;
                 komut.Connection = baglanti;
