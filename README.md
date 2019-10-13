@@ -22,3 +22,5 @@
  6. ~~Günün yemeğinde combobox değeri değiştiğinde tekrar sorgu yapılıp veriler yenilenecek.~~
  7. ~~Bağlantı stringi sınıfa atanıp tek bir dosya değiştirilerek kullanılabilecek.~~
  8. ~~Yemeğin yapılış açıklamaları eklenecek~~
+ 9. Malzemenin fiyatları veritabanında tutularak geçmiş fiyat grafiği yapılacak.
+ 10. Bulunan yemeğin toplam maliyeti hesaplanacak.
