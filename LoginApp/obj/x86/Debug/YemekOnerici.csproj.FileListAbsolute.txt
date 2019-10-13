@@ -65,3 +65,4 @@ C:\Users\omera\Source\Repos\melihcaliskan\yemek-onerici\LoginApp\obj\x86\Debug\Y
 C:\Users\omera\Source\Repos\melihcaliskan\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.exe
 C:\Users\omera\Source\Repos\melihcaliskan\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.pdb
 C:\Users\omera\Source\Repos\melihcaliskan\yemek-onerici\LoginApp\bin\Debug\YemekOnerici.pdb
+C:\Users\omera\Source\Repos\melihcaliskan\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.fiyatTablosu.resources

@@ -48,6 +48,7 @@
             this.checkedListBox5 = new System.Windows.Forms.CheckedListBox();
             this.label7 = new System.Windows.Forms.Label();
             this.checkedListBox6 = new System.Windows.Forms.CheckedListBox();
+            this.btnFiyatForm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -65,7 +66,7 @@
             // 
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Location = new System.Drawing.Point(14, 98);
-            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(157, 154);
             this.checkedListBox1.TabIndex = 1;
@@ -74,7 +75,7 @@
             // 
             this.bul.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bul.Location = new System.Drawing.Point(311, 471);
-            this.bul.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bul.Margin = new System.Windows.Forms.Padding(2);
             this.bul.Name = "bul";
             this.bul.Size = new System.Drawing.Size(262, 91);
             this.bul.TabIndex = 2;
@@ -110,7 +111,7 @@
             // 
             this.checkedListBox2.FormattingEnabled = true;
             this.checkedListBox2.Location = new System.Drawing.Point(216, 98);
-            this.checkedListBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkedListBox2.Margin = new System.Windows.Forms.Padding(2);
             this.checkedListBox2.Name = "checkedListBox2";
             this.checkedListBox2.Size = new System.Drawing.Size(157, 154);
             this.checkedListBox2.TabIndex = 4;
@@ -131,7 +132,7 @@
             // 
             this.checkedListBox3.FormattingEnabled = true;
             this.checkedListBox3.Location = new System.Drawing.Point(418, 98);
-            this.checkedListBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkedListBox3.Margin = new System.Windows.Forms.Padding(2);
             this.checkedListBox3.Name = "checkedListBox3";
             this.checkedListBox3.Size = new System.Drawing.Size(157, 154);
             this.checkedListBox3.TabIndex = 6;
@@ -152,7 +153,7 @@
             // 
             this.checkedListBox4.FormattingEnabled = true;
             this.checkedListBox4.Location = new System.Drawing.Point(418, 293);
-            this.checkedListBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkedListBox4.Margin = new System.Windows.Forms.Padding(2);
             this.checkedListBox4.Name = "checkedListBox4";
             this.checkedListBox4.Size = new System.Drawing.Size(157, 154);
             this.checkedListBox4.TabIndex = 8;
@@ -161,7 +162,7 @@
             // 
             this.sonYemeklerim.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.sonYemeklerim.Location = new System.Drawing.Point(14, 472);
-            this.sonYemeklerim.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sonYemeklerim.Margin = new System.Windows.Forms.Padding(2);
             this.sonYemeklerim.Name = "sonYemeklerim";
             this.sonYemeklerim.Size = new System.Drawing.Size(115, 35);
             this.sonYemeklerim.TabIndex = 11;
@@ -173,7 +174,7 @@
             // 
             this.gununYemegi.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.gununYemegi.Location = new System.Drawing.Point(142, 472);
-            this.gununYemegi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gununYemegi.Margin = new System.Windows.Forms.Padding(2);
             this.gununYemegi.Name = "gununYemegi";
             this.gununYemegi.Size = new System.Drawing.Size(115, 35);
             this.gununYemegi.TabIndex = 12;
@@ -189,7 +190,7 @@
             // 
             this.malzemeEkleButonu.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.malzemeEkleButonu.Location = new System.Drawing.Point(14, 527);
-            this.malzemeEkleButonu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.malzemeEkleButonu.Margin = new System.Windows.Forms.Padding(2);
             this.malzemeEkleButonu.Name = "malzemeEkleButonu";
             this.malzemeEkleButonu.Size = new System.Drawing.Size(115, 35);
             this.malzemeEkleButonu.TabIndex = 13;
@@ -201,7 +202,7 @@
             // 
             this.yemekEkle.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.yemekEkle.Location = new System.Drawing.Point(142, 527);
-            this.yemekEkle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.yemekEkle.Margin = new System.Windows.Forms.Padding(2);
             this.yemekEkle.Name = "yemekEkle";
             this.yemekEkle.Size = new System.Drawing.Size(115, 35);
             this.yemekEkle.TabIndex = 14;
@@ -225,7 +226,7 @@
             // 
             this.checkedListBox5.FormattingEnabled = true;
             this.checkedListBox5.Location = new System.Drawing.Point(14, 293);
-            this.checkedListBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkedListBox5.Margin = new System.Windows.Forms.Padding(2);
             this.checkedListBox5.Name = "checkedListBox5";
             this.checkedListBox5.Size = new System.Drawing.Size(157, 154);
             this.checkedListBox5.TabIndex = 15;
@@ -246,16 +247,29 @@
             // 
             this.checkedListBox6.FormattingEnabled = true;
             this.checkedListBox6.Location = new System.Drawing.Point(216, 293);
-            this.checkedListBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkedListBox6.Margin = new System.Windows.Forms.Padding(2);
             this.checkedListBox6.Name = "checkedListBox6";
             this.checkedListBox6.Size = new System.Drawing.Size(157, 154);
             this.checkedListBox6.TabIndex = 17;
+            // 
+            // btnFiyatForm
+            // 
+            this.btnFiyatForm.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnFiyatForm.Location = new System.Drawing.Point(61, 571);
+            this.btnFiyatForm.Margin = new System.Windows.Forms.Padding(2);
+            this.btnFiyatForm.Name = "btnFiyatForm";
+            this.btnFiyatForm.Size = new System.Drawing.Size(146, 35);
+            this.btnFiyatForm.TabIndex = 19;
+            this.btnFiyatForm.Text = "Malzeme Fiyat Değişimi";
+            this.btnFiyatForm.UseVisualStyleBackColor = true;
+            this.btnFiyatForm.Click += new System.EventHandler(this.btnFiyatForm_Click);
             // 
             // anaMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(611, 598);
+            this.ClientSize = new System.Drawing.Size(611, 617);
+            this.Controls.Add(this.btnFiyatForm);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.checkedListBox6);
             this.Controls.Add(this.label6);
@@ -305,5 +319,6 @@
         private System.Windows.Forms.CheckedListBox checkedListBox5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.CheckedListBox checkedListBox6;
+        private System.Windows.Forms.Button btnFiyatForm;
     }
 }

@@ -104,5 +104,11 @@ namespace LoginApp
             yemekEkle yemekEkle = new yemekEkle();
             yemekEkle.Show();
         }
+
+        private void btnFiyatForm_Click(object sender, EventArgs e)
+        {
+            fiyatTablosu fiyatTablosunaGit = new fiyatTablosu();
+            fiyatTablosunaGit.Show();
+        }
     }
 }
