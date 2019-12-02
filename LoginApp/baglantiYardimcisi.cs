@@ -14,7 +14,24 @@ namespace YemekOnerici
         SqlDataAdapter da;
         public static string get()
         {
-            return "Server = MELIHALIKAN22F1\\SQLEXPRESS; Database = odev; Integrated Security = SSPI";
+            return "Data Source=DESKTOP-FEK1O0B\\SQLEXPRESS;Initial Catalog=odev;Integrated Security=True";
+        }
+
+        public DataTable yoneticiCek()
+        {
+            baglanti.Open();
+            da = new SqlDataAdapter(
+                @"SELECT
+                *
+
+                FROM
+                dbo.yonetici_giris
+                
+                ", baglanti);
+            DataTable uyeler = new DataTable();
+            da.Fill(uyeler);
+            baglanti.Close();
+            return uyeler;
         }
 
         public DataTable uyeleriCek()

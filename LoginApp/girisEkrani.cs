@@ -16,6 +16,7 @@ namespace LoginApp
         SqlConnection baglanti = new SqlConnection(baglantiYardimcisi.get());
         SqlCommand komut = new System.Data.SqlClient.SqlCommand();
         SqlDataAdapter da;
+        
         public girisEkrani()
         {
             InitializeComponent();
@@ -36,6 +37,9 @@ namespace LoginApp
                 komut.CommandText = "INSERT INTO dbo.oturum VALUES('"+ txtUsername.Text.Trim() + "', '"+ Guid.NewGuid().ToString("n") +"')";
                 komut.ExecuteNonQuery();
 
+                //izin bak
+                yonetici ac = new yonetici();
+                ac.Show();
                 this.Hide();
                 anaMenu.Show();
             }
@@ -52,6 +56,13 @@ namespace LoginApp
 
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.DataSource = uyeler;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            uyeKayit ac = new uyeKayit();
+            ac.Show();
+            this.Hide();
         }
     }
 }

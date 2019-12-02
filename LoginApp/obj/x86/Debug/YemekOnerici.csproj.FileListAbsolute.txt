@@ -65,3 +65,36 @@ C:\Users\omera\Source\Repos\melihcaliskan\yemek-onerici\LoginApp\obj\x86\Debug\Y
 C:\Users\omera\Source\Repos\melihcaliskan\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.csproj.CoreCompileInputs.cache
 C:\Users\omera\Source\Repos\melihcaliskan\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.exe
 C:\Users\omera\Source\Repos\melihcaliskan\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.pdb
+C:\Users\User\Desktop\yemek-onerici-master\LoginApp\obj\x86\Debug\YemekOnerici.exe
+C:\Users\User\Desktop\yemek-onerici-master\LoginApp\obj\x86\Debug\YemekOnerici.pdb
+C:\Users\User\Desktop\yemek-onerici-master\LoginApp\obj\x86\Debug\YemekOnerici.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\yemek-onerici-master\LoginApp\obj\x86\Debug\LoginApp.gununYemegi.resources
+C:\Users\User\Desktop\yemek-onerici-master\LoginApp\obj\x86\Debug\YemekOnerici.malzemeEkle.resources
+C:\Users\User\Desktop\yemek-onerici-master\LoginApp\obj\x86\Debug\YemekOnerici.sonucEkrani.resources
+C:\Users\User\Desktop\yemek-onerici-master\LoginApp\obj\x86\Debug\LoginApp.sonYemekler.resources
+C:\Users\User\Desktop\yemek-onerici-master\LoginApp\obj\x86\Debug\LoginApp.girisEkrani.resources
+C:\Users\User\Desktop\yemek-onerici-master\LoginApp\obj\x86\Debug\LoginApp.anaMenu.resources
+C:\Users\User\Desktop\yemek-onerici-master\LoginApp\obj\x86\Debug\YemekOnerici.Properties.Resources.resources
+C:\Users\User\Desktop\yemek-onerici-master\LoginApp\obj\x86\Debug\YemekOnerici.yemekEkle.resources
+C:\Users\User\Desktop\yemek-onerici-master\LoginApp\obj\x86\Debug\YemekOnerici.csproj.GenerateResource.Cache
+C:\Users\User\Desktop\yemek-onerici-master\LoginApp\bin\Debug\YemekOnerici.exe
+C:\Users\User\Desktop\yemek-onerici-master\LoginApp\bin\Debug\YemekOnerici.pdb
+C:\Users\User\Desktop\yemek-onerici- son hali\LoginApp\obj\x86\Debug\YemekOnerici.exe
+C:\Users\User\Desktop\yemek-onerici- son hali\LoginApp\obj\x86\Debug\YemekOnerici.pdb
+C:\Users\User\Desktop\yemek-onerici- son hali\LoginApp\obj\x86\Debug\YemekOnerici.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\yemek-onerici- son hali\LoginApp\obj\x86\Debug\LoginApp.gununYemegi.resources
+C:\Users\User\Desktop\yemek-onerici- son hali\LoginApp\obj\x86\Debug\YemekOnerici.malzemeEkle.resources
+C:\Users\User\Desktop\yemek-onerici- son hali\LoginApp\obj\x86\Debug\YemekOnerici.sonucEkrani.resources
+C:\Users\User\Desktop\yemek-onerici- son hali\LoginApp\obj\x86\Debug\LoginApp.sonYemekler.resources
+C:\Users\User\Desktop\yemek-onerici- son hali\LoginApp\obj\x86\Debug\LoginApp.girisEkrani.resources
+C:\Users\User\Desktop\yemek-onerici- son hali\LoginApp\obj\x86\Debug\LoginApp.anaMenu.resources
+C:\Users\User\Desktop\yemek-onerici- son hali\LoginApp\obj\x86\Debug\YemekOnerici.Properties.Resources.resources
+C:\Users\User\Desktop\yemek-onerici- son hali\LoginApp\obj\x86\Debug\YemekOnerici.yemekEkle.resources
+C:\Users\User\Desktop\yemek-onerici- son hali\LoginApp\obj\x86\Debug\YemekOnerici.csproj.GenerateResource.Cache
+C:\Users\User\Desktop\yemek-onerici- son hali\LoginApp\obj\x86\Debug\LoginApp.oturumAc.resources
+C:\Users\User\Desktop\yemek-onerici- son hali\LoginApp\bin\Debug\YemekOnerici.exe
+C:\Users\User\Desktop\yemek-onerici- son hali\LoginApp\bin\Debug\YemekOnerici.pdb
+C:\Users\User\Desktop\yemek-onerici- son hali\LoginApp\obj\x86\Debug\LoginApp.yonetici.resources
+C:\Users\User\Desktop\yemek-onerici- son hali\LoginApp\obj\x86\Debug\LoginApp.yoneticiGiris.resources
+C:\Users\User\Desktop\yemek-onerici- son hali\LoginApp\obj\x86\Debug\LoginApp.uyeBilgi.resources
+C:\Users\User\Desktop\yemek-onerici- son hali\LoginApp\obj\x86\Debug\LoginApp.uyeKayit.resources
