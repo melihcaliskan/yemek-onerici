@@ -7,7 +7,7 @@ using YemekOnerici;
 using System.Windows.Documents;
 namespace LoginApp
 {
-    
+
     public partial class anaMenu : Form
     {
         String kullaniciadi;
@@ -19,7 +19,7 @@ namespace LoginApp
         List<int> aa = new List<int>();
         string a;
         int b;
-        
+
 
         private DataTable malzemeleriCek(int id)
         {
@@ -62,8 +62,8 @@ namespace LoginApp
             tabloyaEkle(6, checkedListBox4);
             comboEkle(1, listBox1);
         }
-  
-   
+
+
 
         private void frmMain_Load(object sender, EventArgs e)
         {
@@ -81,6 +81,22 @@ namespace LoginApp
             secilenleriBul(checkedListBox6);
 
             String sorguIDleri = string.Join(",", secilenIDler);
+
+            int toplam_fiyat = 0;
+            for (int i = 0; i < secilenIDler.Count; i++) { 
+                baglanti.Open();
+                da = new SqlDataAdapter(
+                    @"SELECT
+                *
+
+                FROM
+                dbo.malzeme_fiyat
+                WHERE id =" + secilenIDler[i], baglanti);
+            baglanti.Close();
+            
+        
+    }
+
             sonucEkrani sonucEkrani = new sonucEkrani(sorguIDleri);
             sonucEkrani.Show();
         }
