@@ -13,6 +13,9 @@ namespace LoginApp
 {
     public partial class sonYemekler : Form
 
+=======
+        
+>>>>>>> omer123
     {
         int kullaniciId;
         Label[] labels;
