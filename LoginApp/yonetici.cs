@@ -61,6 +61,14 @@ namespace LoginApp
             baglanti.Close();
             MessageBox.Show("Güncelleme Başarılı");
         }
+
+        private void yonetici_Load(object sender, EventArgs e)
+        {
+            SqlDataAdapter adptr = new SqlDataAdapter("Select * from dbo.kullanici", baglanti);
+            DataTable dt = new DataTable();
+            adptr.Fill(dt);
+            dataGridView1.DataSource = dt;
+        }
     }
 }
     
