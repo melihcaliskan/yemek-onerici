@@ -64,6 +64,7 @@ namespace LoginApp
             baglanti.Close();
             MessageBox.Show("Güncelleme Başarılı");
         }
+<<<<<<< HEAD
 
         private void yonetici_Load(object sender, EventArgs e)
         {
@@ -89,6 +90,8 @@ namespace LoginApp
         {
 
         }
+=======
+>>>>>>> 8d0fa313892f4c53f1990b4c7268f11a62fec7f2
     }
 }
     
