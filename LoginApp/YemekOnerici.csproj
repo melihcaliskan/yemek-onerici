@@ -68,6 +68,12 @@
     <Compile Include="gununYemegi.Designer.cs">
       <DependentUpon>gununYemegi.cs</DependentUpon>
     </Compile>
+    <Compile Include="moderator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="moderator.Designer.cs">
+      <DependentUpon>moderator.cs</DependentUpon>
+    </Compile>
     <Compile Include="sonucEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="malzemeEkle.resx">
       <DependentUpon>malzemeEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="moderator.resx">
+      <DependentUpon>moderator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="sonucEkrani.resx">
       <DependentUpon>sonucEkrani.cs</DependentUpon>

@@ -115,8 +115,7 @@ namespace LoginApp
 
         private void malzemeEkleButonu_Click(object sender, EventArgs e)
         {
-            malzemeEkle malzemeEkle = new malzemeEkle();
-            malzemeEkle.Show();
+            
         }
 
         private void yemekEkle_Click(object sender, MouseEventArgs e)
@@ -143,6 +142,12 @@ namespace LoginApp
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+            moderator moderatorr = new moderator();
+            moderatorr.Show();
+        }
+
+        private void yemekEkle_Click(object sender, EventArgs e)
         {
 
         }

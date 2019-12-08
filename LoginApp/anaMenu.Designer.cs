@@ -41,8 +41,6 @@
             this.sonYemeklerim = new System.Windows.Forms.Button();
             this.gununYemegi = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.malzemeEkleButonu = new System.Windows.Forms.Button();
-            this.yemekEkle = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.checkedListBox5 = new System.Windows.Forms.CheckedListBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -180,30 +178,6 @@
             // 
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             // 
-            // malzemeEkleButonu
-            // 
-            this.malzemeEkleButonu.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.malzemeEkleButonu.Location = new System.Drawing.Point(14, 527);
-            this.malzemeEkleButonu.Margin = new System.Windows.Forms.Padding(2);
-            this.malzemeEkleButonu.Name = "malzemeEkleButonu";
-            this.malzemeEkleButonu.Size = new System.Drawing.Size(115, 35);
-            this.malzemeEkleButonu.TabIndex = 13;
-            this.malzemeEkleButonu.Text = "Malzeme Ekle";
-            this.malzemeEkleButonu.UseVisualStyleBackColor = true;
-            this.malzemeEkleButonu.Click += new System.EventHandler(this.malzemeEkleButonu_Click);
-            // 
-            // yemekEkle
-            // 
-            this.yemekEkle.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.yemekEkle.Location = new System.Drawing.Point(142, 527);
-            this.yemekEkle.Margin = new System.Windows.Forms.Padding(2);
-            this.yemekEkle.Name = "yemekEkle";
-            this.yemekEkle.Size = new System.Drawing.Size(115, 35);
-            this.yemekEkle.TabIndex = 14;
-            this.yemekEkle.Text = "Yemek Ekle";
-            this.yemekEkle.UseVisualStyleBackColor = true;
-            this.yemekEkle.MouseClick += new System.Windows.Forms.MouseEventHandler(this.yemekEkle_Click);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -327,8 +301,6 @@
             this.Controls.Add(this.checkedListBox6);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.checkedListBox5);
-            this.Controls.Add(this.yemekEkle);
-            this.Controls.Add(this.malzemeEkleButonu);
             this.Controls.Add(this.gununYemegi);
             this.Controls.Add(this.sonYemeklerim);
             this.Controls.Add(this.label5);
@@ -364,8 +336,6 @@
         private System.Windows.Forms.Button sonYemeklerim;
         private System.Windows.Forms.Button gununYemegi;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.Button malzemeEkleButonu;
-        private System.Windows.Forms.Button yemekEkle;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.CheckedListBox checkedListBox5;
         private System.Windows.Forms.Label label7;
