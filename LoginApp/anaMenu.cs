@@ -59,6 +59,7 @@ namespace LoginApp
         private void frmMain_Load(object sender, EventArgs e)
         {
             label1.Text = "Hoşgeldin " + Char.ToUpper(kullaniciadi[0]) + kullaniciadi.Remove(0, 1) + ", ";
+            label8.Text = "se";
         }
 
         private void bul_Click(object sender, EventArgs e)

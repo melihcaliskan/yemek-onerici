@@ -14,7 +14,7 @@ namespace YemekOnerici
         SqlDataAdapter da;
         public static string get()
         {
-            return "Server = MELIHALIKAN22F1\\SQLEXPRESS; Database = odev; Integrated Security = SSPI";
+            return "Server = DESKTOP-FEK1O0B\\SQLEXPRESS; Database = odev; Integrated Security = SSPI";
         }
 
         public DataTable uyeleriCek()
