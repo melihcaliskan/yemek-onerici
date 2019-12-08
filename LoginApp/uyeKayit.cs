@@ -27,33 +27,15 @@ namespace LoginApp
             try
             {
                 komut.Connection = baglanti;
-                komut.CommandText = "Insert Into dbo.kullanici(id,ad,sifre,email) values('" + textBox4.Text + "','" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "')";
+                komut.CommandText = "INSERT Into dbo.kullanici(ad,sifre) values('" + textBox1.Text + "','" + textBox2.Text + "')";
                 baglanti.Open();
                 komut.ExecuteNonQuery();
                 komut.Dispose();
                 baglanti.Close();
                 MessageBox.Show("Kayıt başarılı");
+                this.Hide();
             }
             catch { MessageBox.Show("Kayıt başarısız."); }
-        }
-
-        private void uyeKayit_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-            int u = textBox4.TextLength;
-            
-
-            if (u == 4)
-            {
-                MessageBox.Show("Maksimum sınıra ulaştınız!");
-            }
-
-           
-
         }
     }
 }

@@ -70,7 +70,7 @@ namespace LoginApp
                     button2.Visible = false;
                     break;
                 case "Moderatör":
-                    button2.Visible = false;
+                    button1.Visible = false;
                     break;
                 case "Yönetici":
                     break;
@@ -140,7 +140,11 @@ namespace LoginApp
         {
             uyeBilgi ac = new uyeBilgi();
             ac.Show();
-            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

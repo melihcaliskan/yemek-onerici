@@ -261,7 +261,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(455, 590);
+            this.button1.Location = new System.Drawing.Point(204, 591);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(118, 35);
@@ -272,13 +272,14 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(311, 590);
+            this.button2.Location = new System.Drawing.Point(340, 591);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(124, 35);
             this.button2.TabIndex = 21;
             this.button2.Text = "Moderatör Ekranı";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
@@ -304,7 +305,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(637, 590);
+            this.button3.Location = new System.Drawing.Point(481, 590);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(92, 35);
             this.button3.TabIndex = 23;
@@ -316,7 +317,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(782, 681);
+            this.ClientSize = new System.Drawing.Size(596, 681);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button2);
