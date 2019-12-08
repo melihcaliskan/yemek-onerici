@@ -151,5 +151,11 @@ namespace LoginApp
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            yonetici yonetici = new yonetici();
+            yonetici.Show();
+        }
     }
 }
