@@ -42,7 +42,7 @@
             // btnLogin
             // 
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
+
             this.btnLogin.Location = new System.Drawing.Point(425, 138);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
 
@@ -57,7 +57,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
+
             this.label1.Location = new System.Drawing.Point(92, 39);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 
@@ -69,10 +69,10 @@
             // txtUsername
             // 
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
+
             this.txtUsername.Location = new System.Drawing.Point(256, 36);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
-=======
+
 
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(216, 22);
@@ -82,10 +82,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
+
             this.label2.Location = new System.Drawing.Point(147, 84);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-=======
+
 
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 16);
@@ -95,7 +95,7 @@
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
+
             this.txtPassword.Location = new System.Drawing.Point(256, 81);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
 
@@ -119,9 +119,9 @@
             this.dataGridView1.RowHeadersWidth = 80;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView1.RowTemplate.Height = 24;
-<<<<<<< HEAD
+
             this.dataGridView1.Size = new System.Drawing.Size(582, 176);
-=======
+
             this.dataGridView1.TabIndex = 3;
             // 
             // label3
@@ -147,9 +147,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-<<<<<<< HEAD
+
             this.ClientSize = new System.Drawing.Size(648, 433);
-=======
+
 
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);

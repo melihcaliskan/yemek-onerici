@@ -86,7 +86,7 @@ namespace LoginApp
         {
 
             sonYemekler sonYemekler = new sonYemekler(kullaniciId);
->>>>>>> omer123
+
             sonYemekler.Show();
         }
         private void gununYemegiButonu(object sender, EventArgs e)
@@ -111,6 +111,11 @@ namespace LoginApp
         {
             fiyatTablosu fiyatTablosunaGit = new fiyatTablosu();
             fiyatTablosunaGit.Show();
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

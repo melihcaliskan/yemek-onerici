@@ -37,7 +37,6 @@
 \\Mac\Home\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.yemekEkle.resources
 C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\bin\Debug\YemekOnerici.exe
 C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\bin\Debug\YemekOnerici.pdb
-C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.csprojAssemblyReference.cache
 C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\LoginApp.gununYemegi.resources
 C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.malzemeEkle.resources
 C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\LoginApp.sonYemekler.resources
@@ -46,7 +45,6 @@ C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\LoginApp.ana
 C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.Properties.Resources.resources
 C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.yemekEkle.resources
 C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.csproj.GenerateResource.cache
-C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.csproj.CoreCompileInputs.cache
 C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.exe
 C:\Users\user\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.pdb
 \\Mac\Home\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.sonucEkrani.resources
@@ -66,3 +64,6 @@ C:\Users\omera\Source\Repos\melihcaliskan\yemek-onerici\LoginApp\obj\x86\Debug\Y
 C:\Users\omera\Source\Repos\melihcaliskan\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.pdb
 C:\Users\omera\Source\Repos\melihcaliskan\yemek-onerici\LoginApp\bin\Debug\YemekOnerici.pdb
 C:\Users\omera\Source\Repos\melihcaliskan\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.fiyatTablosu.resources
+C:\Users\User\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.fiyatTablosu.resources
+C:\Users\User\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.sonucEkrani.resources
