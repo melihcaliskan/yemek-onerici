@@ -28,7 +28,7 @@ namespace LoginApp
             DataTable tablo = new DataTable();
             da.Fill(tablo);
             if (tablo.Rows.Count == 1){
-                anaMenu anaMenu = new anaMenu(txtUsername.Text,int.Parse(tablo.Rows[0][0].ToString()));
+                anaMenu anaMenu = new anaMenu(int.Parse(tablo.Rows[0][0].ToString()));
 
                 komut.CommandType = System.Data.CommandType.Text;
                 komut.Connection = baglanti;
@@ -52,6 +52,17 @@ namespace LoginApp
 
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.DataSource = uyeler;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            uyeKayit uyeKayit = new uyeKayit();
+            uyeKayit.Show();
         }
     }
 }

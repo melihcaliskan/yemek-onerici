@@ -94,11 +94,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="uyeBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uyeBilgi.Designer.cs">
+      <DependentUpon>uyeBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uyeKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uyeKayit.Designer.cs">
+      <DependentUpon>uyeKayit.cs</DependentUpon>
+    </Compile>
     <Compile Include="yemekEkle.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="yemekEkle.Designer.cs">
       <DependentUpon>yemekEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yonetici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yonetici.Designer.cs">
+      <DependentUpon>yonetici.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="fiyatTablosu.resx">
       <DependentUpon>fiyatTablosu.cs</DependentUpon>
@@ -131,8 +149,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="uyeBilgi.resx">
+      <DependentUpon>uyeBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uyeKayit.resx">
+      <DependentUpon>uyeKayit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="yemekEkle.resx">
       <DependentUpon>yemekEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yonetici.resx">
+      <DependentUpon>yonetici.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

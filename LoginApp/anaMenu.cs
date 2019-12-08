@@ -16,10 +16,8 @@ namespace LoginApp
         SqlDataAdapter da;
         List<int> secilenIDler = new List<int>();
 
-        public anaMenu(String kullaniciadi,int kullaniciId)
+        public anaMenu(int kullaniciId)
         {
-            this.kullaniciadi = kullaniciadi;
-
             this.kullaniciId = kullaniciId;
             InitializeComponent();
 
@@ -58,8 +56,27 @@ namespace LoginApp
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            label1.Text = "Hoşgeldin " + Char.ToUpper(kullaniciadi[0]) + kullaniciadi.Remove(0, 1) + ", ";
-            label8.Text = "se";
+            baglantiYardimcisi yardimci = new baglantiYardimcisi();
+            DataTable uyeBilgisi = yardimci.uyeBilgisiCek(kullaniciId);
+
+            String kullaniciIsmi = uyeBilgisi.Rows[0][1].ToString();
+            label1.Text = "Hoşgeldin " + Char.ToUpper(kullaniciIsmi[0]) + kullaniciIsmi.Remove(0, 1) + ", ";
+            label8.Text = uyeBilgisi.Rows[0][2].ToString();
+
+            switch (label8.Text)
+            {
+                case "Üye":
+                    button1.Visible = false;
+                    button2.Visible = false;
+                    break;
+                case "Moderatör":
+                    button2.Visible = false;
+                    break;
+                case "Yönetici":
+                    break;
+                default:
+                    break;
+            }
         }
 
         private void bul_Click(object sender, EventArgs e)
@@ -117,6 +134,13 @@ namespace LoginApp
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            uyeBilgi ac = new uyeBilgi();
+            ac.Show();
+            this.Hide();
         }
     }
 }

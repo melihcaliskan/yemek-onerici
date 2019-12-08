@@ -157,6 +157,24 @@ namespace YemekOnerici
             baglanti.Close();
             return sonuc;
         }
-
+        public DataTable uyeBilgisiCek(int id)
+        {
+            baglanti.Open();
+            da = new SqlDataAdapter(
+                @"SELECT
+	                kullanici.id,
+	                kullanici.ad,
+	                yetki_isimleri.isim 
+                FROM
+	                kullanici
+	                INNER JOIN yetki_isimleri ON kullanici.yetki = yetki_isimleri.id 
+                WHERE
+	                kullanici.id = "+id+";"
+                , baglanti);
+            DataTable uyeler = new DataTable();
+            da.Fill(uyeler);
+            baglanti.Close();
+            return uyeler;
+        }
     }
 }

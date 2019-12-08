@@ -52,6 +52,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // checkedListBox1
@@ -301,11 +302,22 @@
             this.label8.TabIndex = 22;
             this.label8.Text = "Yetki: Üye";
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(637, 590);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(92, 35);
+            this.button3.TabIndex = 23;
+            this.button3.Text = "Profilim";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // anaMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(611, 681);
+            this.ClientSize = new System.Drawing.Size(782, 681);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -362,5 +374,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button3;
     }
 }

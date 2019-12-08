@@ -64,6 +64,8 @@ C:\Users\omera\Source\Repos\melihcaliskan\yemek-onerici\LoginApp\obj\x86\Debug\Y
 C:\Users\omera\Source\Repos\melihcaliskan\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.pdb
 C:\Users\omera\Source\Repos\melihcaliskan\yemek-onerici\LoginApp\bin\Debug\YemekOnerici.pdb
 C:\Users\omera\Source\Repos\melihcaliskan\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.fiyatTablosu.resources
-C:\Users\User\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.csprojResolveAssemblyReference.cache
 C:\Users\User\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.fiyatTablosu.resources
 C:\Users\User\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.sonucEkrani.resources
+C:\Users\User\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\LoginApp.yonetici.resources
+C:\Users\User\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\LoginApp.uyeKayit.resources
+C:\Users\User\Documents\GitHub\yemek-onerici\LoginApp\obj\x86\Debug\YemekOnerici.uyeBilgi.resources
