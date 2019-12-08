@@ -24,7 +24,10 @@ namespace LoginApp
         private void button1_Click(object sender, EventArgs e)
         {
 
-
+            SqlDataAdapter adptr = new SqlDataAdapter("Select * from dbo.malzeme_guncel_fiyat", baglanti);
+            DataTable dt = new DataTable();
+            adptr.Fill(dt);
+            dataGridView1.DataSource = dt;
 
         }
 
@@ -45,7 +48,7 @@ namespace LoginApp
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SqlDataAdapter adptr = new SqlDataAdapter("Select * from dbo.malzeme_fiyat", baglanti);
+            SqlDataAdapter adptr = new SqlDataAdapter("Select * from dbo.kullanici", baglanti);
             DataTable dt = new DataTable();
             adptr.Fill(dt);
             dataGridView1.DataSource = dt;
@@ -64,10 +67,27 @@ namespace LoginApp
 
         private void yonetici_Load(object sender, EventArgs e)
         {
-            SqlDataAdapter adptr = new SqlDataAdapter("Select * from dbo.kullanici", baglanti);
-            DataTable dt = new DataTable();
-            adptr.Fill(dt);
-            dataGridView1.DataSource = dt;
+            
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                komut.Connection = baglanti;
+                komut.CommandText = "DELETE FROM kullanici where id=" + textBox3.Text + "";
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+                komut.Dispose();
+                baglanti.Close();
+                MessageBox.Show("Kayıt Silindi!");
+            }
+            catch { MessageBox.Show("Kayıt Silinemedi"); }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
