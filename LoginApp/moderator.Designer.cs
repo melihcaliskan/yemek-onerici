@@ -34,6 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -94,11 +95,22 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Malzeme Listesi :";
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(377, 357);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(165, 21);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "Rasgele fiyat oluştur";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // moderator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(858, 329);
+            this.ClientSize = new System.Drawing.Size(858, 312);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label1);
@@ -123,5 +135,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button3;
     }
 }

@@ -56,5 +56,23 @@ namespace YemekOnerici
             
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            komut.Connection = baglanti;
+            baglanti.Open();
+            for (int i = 93; i <= 160; i++)
+            {
+                Random rnd = new Random();
+                int sayi = rnd.Next(50)+10;
+                
+                komut.CommandText = "INSERT Into dbo.malzeme_guncel_fiyat(malzemeId,malzemeGuncelFiyat,guncellemeTarihi) values('" +i.ToString() + "','" + sayi.ToString() + "','2019-09-11')";
+                
+                komut.ExecuteNonQuery();
+                komut.Dispose();
+                
+            }
+            baglanti.Close();
+        }
     }
 }
