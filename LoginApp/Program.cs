@@ -13,7 +13,7 @@ namespace LoginApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new anaMenu(3));
+            Application.Run(new girisEkrani());
         }
     }
 }
